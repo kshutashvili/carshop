@@ -1,4 +1,4 @@
-webpackJsonp([6],{
+webpackJsonp([8],{
 
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
@@ -10261,58 +10261,65 @@ return jQuery;
 
 /***/ }),
 
-/***/ 25:
+/***/ 29:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(26);
+__webpack_require__(30);
 
-var formSwitch = function formSwitch() {
-    var regLinksWrap = $(".reg-links");
-    var formOpt = $("#form-opt");
-    var formRzn = $("#form-rzn");
-    var regOpt = $(".reg-opt");
-    var regRzn = $(".reg-rzn");
-    console.log(regOpt);
-    console.log(regRzn);
+var tableRowsSwitch = function tableRowsSwitch() {
+    var $rows = $("#table").find(".row");
+    $rows.each(function () {
+        var $btn = $(this).find("#arrow-btn");
+        var $addition = $(this).find("#full-block");
+        var $parent = $btn.parent();
 
-    regOpt.each(function () {
-
-        $(this).off("click");
-        $(this).on("click", function (e) {
-            e.preventDefault();
-            regLinksWrap.hide();
-            formOpt.show();
-            formRzn.hide();
-        });
-    });
-    regRzn.each(function () {
-
-        $(this).off("click");
-        $(this).on("click", function (e) {
-            e.preventDefault();
-            regLinksWrap.hide();
-            formOpt.hide();
-            formRzn.show();
+        $btn.off("click");
+        $btn.on("click", function () {
+            $addition.slideToggle();
+            $parent.toggleClass("active");
         });
     });
 };
 
+var navSelect = function navSelect() {
+    var $table = $("#table");
+
+    var $inputs = $table.find("input[type=checkbox]");
+    var $checkAll = $("#check-all");
+    var $uncheckAll = $("#check-out");
+
+    $checkAll.off("click");
+    $checkAll.on("click", function (e) {
+        e.preventDefault();
+
+        $inputs.attr("checked", true);
+    });
+    $uncheckAll.off("click");
+    $uncheckAll.on("click", function (e) {
+        e.preventDefault();
+
+        $inputs.attr("checked", false);
+    });
+};
+$(document).ready(function () {
+    navSelect();
+});
 $(window).on("load", function () {
-    formSwitch();
+    tableRowsSwitch();
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
-/***/ 26:
+/***/ 30:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 
-},[25]);
-//# sourceMappingURL=login.js.map
+},[29]);
+//# sourceMappingURL=lk.orders.js.map

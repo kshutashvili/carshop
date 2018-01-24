@@ -1,4 +1,4 @@
-webpackJsonp([6],{
+webpackJsonp([9],{
 
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
@@ -10261,58 +10261,69 @@ return jQuery;
 
 /***/ }),
 
-/***/ 25:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(26);
+__webpack_require__(32);
 
-var formSwitch = function formSwitch() {
-    var regLinksWrap = $(".reg-links");
-    var formOpt = $("#form-opt");
-    var formRzn = $("#form-rzn");
-    var regOpt = $(".reg-opt");
-    var regRzn = $(".reg-rzn");
-    console.log(regOpt);
-    console.log(regRzn);
+var handleFileSelect = function handleFileSelect() {
 
-    regOpt.each(function () {
+    document.getElementById('file').addEventListener('change', function () {
 
-        $(this).off("click");
-        $(this).on("click", function (e) {
-            e.preventDefault();
-            regLinksWrap.hide();
-            formOpt.show();
-            formRzn.hide();
-        });
-    });
-    regRzn.each(function () {
+        //Check File API support
+        if (window.File && window.FileList && window.FileReader) {
+            (function () {
 
-        $(this).off("click");
-        $(this).on("click", function (e) {
-            e.preventDefault();
-            regLinksWrap.hide();
-            formOpt.hide();
-            formRzn.show();
-        });
-    });
+                var files = event.target.files; //FileList object
+                var output = document.getElementById("uploaded-files-preview");
+
+                var _loop = function _loop(i) {
+                    var file = files[i];
+                    console.log(file);
+                    //Only pics
+                    if (!file.type.match('image')) return 'continue';
+
+                    var picReader = new FileReader();
+                    picReader.addEventListener("load", function (event) {
+                        var picFile = event.target;
+                        var div = document.createElement("div");
+
+                        div.className = "img-wrap";
+                        div.innerHTML = '<img src="' + picFile.result + '"/><span>' + file.name + '</span>';
+                        output.insertBefore(div, null);
+                    });
+                    //Read the image
+                    picReader.readAsDataURL(file);
+                };
+
+                for (var i = 0; i < files.length; i++) {
+                    var _ret2 = _loop(i);
+
+                    if (_ret2 === 'continue') continue;
+                }
+            })();
+        } else {
+            console.log("Your browser does not support File API");
+        }
+    }, false);
 };
 
 $(window).on("load", function () {
-    formSwitch();
+    handleFileSelect();
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
-/***/ 26:
+/***/ 32:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 
-},[25]);
-//# sourceMappingURL=login.js.map
+},[31]);
+//# sourceMappingURL=lk.contacts.js.map

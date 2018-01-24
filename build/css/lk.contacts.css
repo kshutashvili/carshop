@@ -1,0 +1,508 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu.woff2) format("woff2"), url(../fonts/Ubuntu.woff) format("woff"), url(../fonts/Ubuntu.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  src: url(../fonts/Ubuntu-Bold.woff2) format("woff2"), url(../fonts/Ubuntu-Bold.woff) format("woff"), url(../fonts/Ubuntu-Bold.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url(../fonts/OpenSans-Bold.woff2) format("woff2"), url(../fonts/OpenSans-Bold.woff) format("woff"), url(../fonts/OpenSans-Bold.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+.container {
+  width: 100%;
+  padding: 0 50px; }
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.more {
+  display: block;
+  width: 270px;
+  height: 51px;
+  line-height: 51px;
+  margin: 0 auto 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #c11a30; }
+
+/* components */
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+body {
+  background-color: #131313; }
+
+.main-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .main-section .bg-side {
+    width: 445px;
+    background-image: url(../img/reg-img.png);
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat; }
+    .main-section .bg-side .title {
+      margin: 38px -31px 0 0;
+      font-size: 1em;
+      text-align: right; }
+      .main-section .bg-side .title a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.1875em;
+        color: #c11a30;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -4px; }
+  .main-section .content-side {
+    width: calc(100% - 445px); }
+  .main-section .top-line {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 70%;
+    margin: 36px 0 0 0; }
+    .main-section .top-line .login-wrap .log-out {
+      display: block;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 0.875em;
+      color: #7b7b7b;
+      text-align: right; }
+    .main-section .top-line .login-wrap .name {
+      font-family: "Ubuntu Bold", sans-serif;
+      font-size: 1.125em;
+      color: #c11a30; }
+    .main-section .top-line .balance-wrap {
+      margin: 0 4px 0 29px; }
+      .main-section .top-line .balance-wrap .title {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 0.875em;
+        color: #dcdcdc; }
+      .main-section .top-line .balance-wrap .amount {
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 1.125em;
+        color: #c11a30; }
+        .main-section .top-line .balance-wrap .amount span {
+          font-size: 16px;
+          color: #c4c4c4; }
+  .main-section .main-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-section .main-block .left-nav {
+      width: 230px;
+      margin: 96px 0 0 0;
+      padding: 0 0 0 47px; }
+      .main-section .main-block .left-nav .item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 0 0 60px 0; }
+        .main-section .main-block .left-nav .item .user {
+          width: 34px;
+          height: 40px;
+          margin: 0 15px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .order {
+          width: 38px;
+          height: 46px;
+          margin: 0 11px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .call {
+          width: 36px;
+          height: 36px;
+          margin: 0 13px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .delivery {
+          width: 38px;
+          height: 38px;
+          margin: 0 11px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .link {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 40px;
+          padding: 0 15px;
+          font-family: "Ubuntu Bold", sans-serif;
+          font-size: 0.875em;
+          color: #2d2d2d;
+          text-decoration: none;
+          border-left: 4px solid #2d2d2d; }
+        .main-section .main-block .left-nav .item:hover svg {
+          fill: #c11a30; }
+        .main-section .main-block .left-nav .item:hover .link {
+          color: #fff;
+          border-left: 4px solid #c11a30;
+          background-image: url(../img/lk.menu.bg.png);
+          -webkit-background-size: cover;
+                  background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+        .main-section .main-block .left-nav .item.active svg {
+          fill: #c11a30; }
+        .main-section .main-block .left-nav .item.active .link {
+          color: #fff;
+          border-left: 4px solid #c11a30;
+          background-image: url(../img/lk.menu.bg.png);
+          -webkit-background-size: cover;
+                  background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+    .main-section .main-block .content {
+      width: 885px; }
+      .main-section .main-block .content > .title {
+        margin: 19px 0 0 0;
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 0.75em;
+        color: #c11a30; }
+
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+.guest-enter-block {
+  position: relative;
+  width: 572px;
+  height: 262px;
+  margin: 98px 0 0 65px;
+  background-image: url(../img/guest-btn-img.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .guest-enter-block .link {
+    position: absolute;
+    top: 54px;
+    left: -25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 469px;
+    height: 80px;
+    font-family: "Ubuntu Bold", sans-serif;
+    font-size: 2.25em;
+    color: #c11a30;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 7px; }
+    .guest-enter-block .link svg {
+      width: 35px;
+      height: 35px;
+      margin: 0 28px;
+      fill: #c11a30;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+    .guest-enter-block .link span {
+      display: block;
+      padding: 0 49px 0 35px;
+      border-right: 2px solid #dcdcdc; }
+  .guest-enter-block .arrows {
+    position: absolute;
+    top: -79px;
+    right: -206px; }
+  .guest-enter-block .car {
+    position: absolute;
+    top: 134px;
+    left: -163px; }
+
+/* styles */
+.main-section {
+  overflow: hidden; }
+  .main-section .content-side .main-block .content {
+    width: 800px; }
+
+.contacts-wrap {
+  margin: 14px 0 0 0; }
+  .contacts-wrap__title {
+    position: relative;
+    padding: 0 0 4px 0;
+    font-family: "Ubuntu Bold", sans-serif;
+    font-size: 1.5em;
+    color: #fff; }
+    .contacts-wrap__title:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 70px;
+      height: 4px;
+      background-color: #c11a30; }
+  .contacts-wrap__subtitle {
+    margin: 39px 0 0 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.25em;
+    color: #fff; }
+  .contacts-wrap__contacts-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 25px 0 0 0; }
+    .contacts-wrap__contacts-block .left {
+      margin: 0 0 0 52px; }
+      .contacts-wrap__contacts-block .left .field {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        margin: 0 0 25px 0; }
+        .contacts-wrap__contacts-block .left .field svg {
+          fill: #c11a30;
+          margin: 0 32px 0 0; }
+          .contacts-wrap__contacts-block .left .field svg.point {
+            width: 20px;
+            height: 20px; }
+          .contacts-wrap__contacts-block .left .field svg.call {
+            width: 20px;
+            height: 20px; }
+          .contacts-wrap__contacts-block .left .field svg.calendar {
+            width: 21px;
+            height: 21px; }
+          .contacts-wrap__contacts-block .left .field svg.plane {
+            width: 20px;
+            height: 22px; }
+        .contacts-wrap__contacts-block .left .field > div {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 0.875em;
+          color: #fff; }
+          .contacts-wrap__contacts-block .left .field > div > p {
+            color: #7b7b7b; }
+          .contacts-wrap__contacts-block .left .field > div ul {
+            margin: 5px 0 0 0;
+            list-style-type: none; }
+            .contacts-wrap__contacts-block .left .field > div ul li {
+              margin: 0 0 5px 0; }
+    .contacts-wrap__contacts-block .map {
+      margin: 0 0 0 30px; }
+  .contacts-wrap .contact-us-form > .title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.25em;
+    color: #fff; }
+  .contacts-wrap .contact-us-form__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0 0 0; }
+    .contacts-wrap .contact-us-form__content .input-field-wrap textarea {
+      outline: none;
+      width: 570px;
+      height: 160px;
+      padding: 5px;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1em;
+      color: #fff;
+      border: 1px solid #3b3b3b;
+      background-color: #1f1f1f; }
+    .contacts-wrap .contact-us-form__content .controls {
+      width: 170px;
+      margin: 0 0 0 30px; }
+      .contacts-wrap .contact-us-form__content .controls #submit {
+        cursor: pointer;
+        outline: none;
+        width: 100%;
+        height: 40px;
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 1.125em;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: #c11a30; }
+      .contacts-wrap .contact-us-form__content .controls .input-field-file {
+        margin: 10px 0 0 0; }
+        .contacts-wrap .contact-us-form__content .controls .input-field-file #file {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          visibility: hidden; }
+        .contacts-wrap .contact-us-form__content .controls .input-field-file label {
+          cursor: pointer;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 100%;
+          height: 25px;
+          border-radius: 5px;
+          background-color: #3b3b3b; }
+          .contacts-wrap .contact-us-form__content .controls .input-field-file label .attachment {
+            width: 12px;
+            height: 12px;
+            margin: 0 7px;
+            fill: #c4c4c4; }
+          .contacts-wrap .contact-us-form__content .controls .input-field-file label span {
+            display: block;
+            padding: 0 0 0 20px;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 0.75em;
+            color: #c4c4c4;
+            border-left: 1px solid #484848; }
+      .contacts-wrap .contact-us-form__content .controls .upload-files-preview {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 30px 0 0 0;
+        overflow-x: auto;
+        overflow-y: hidden; }
+        .contacts-wrap .contact-us-form__content .controls .upload-files-preview .img-wrap {
+          -webkit-flex-shrink: 0;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+          width: 70px;
+          margin: 0 0 0 5px;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 0.625em;
+          color: #c4c4c4; }
+          .contacts-wrap .contact-us-form__content .controls .upload-files-preview .img-wrap:nth-child(1) {
+            margin: 0; }
+          .contacts-wrap .contact-us-form__content .controls .upload-files-preview .img-wrap img {
+            width: 100%;
+            opacity: .7; }
+
+/*# sourceMappingURL=lk.contacts.css.map*/

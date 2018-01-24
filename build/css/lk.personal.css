@@ -1,0 +1,842 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu.woff2) format("woff2"), url(../fonts/Ubuntu.woff) format("woff"), url(../fonts/Ubuntu.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  src: url(../fonts/Ubuntu-Bold.woff2) format("woff2"), url(../fonts/Ubuntu-Bold.woff) format("woff"), url(../fonts/Ubuntu-Bold.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url(../fonts/OpenSans-Bold.woff2) format("woff2"), url(../fonts/OpenSans-Bold.woff) format("woff"), url(../fonts/OpenSans-Bold.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+.container {
+  width: 100%;
+  padding: 0 50px; }
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.more {
+  display: block;
+  width: 270px;
+  height: 51px;
+  line-height: 51px;
+  margin: 0 auto 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #c11a30; }
+
+/* components */
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+body {
+  background-color: #131313; }
+
+.main-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .main-section .bg-side {
+    width: 445px;
+    background-image: url(../img/reg-img.png);
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat; }
+    .main-section .bg-side .title {
+      margin: 38px -31px 0 0;
+      font-size: 1em;
+      text-align: right; }
+      .main-section .bg-side .title a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.1875em;
+        color: #c11a30;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -4px; }
+  .main-section .content-side {
+    width: calc(100% - 445px); }
+  .main-section .top-line {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 70%;
+    margin: 36px 0 0 0; }
+    .main-section .top-line .login-wrap .log-out {
+      display: block;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 0.875em;
+      color: #7b7b7b;
+      text-align: right; }
+    .main-section .top-line .login-wrap .name {
+      font-family: "Ubuntu Bold", sans-serif;
+      font-size: 1.125em;
+      color: #c11a30; }
+    .main-section .top-line .balance-wrap {
+      margin: 0 4px 0 29px; }
+      .main-section .top-line .balance-wrap .title {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 0.875em;
+        color: #dcdcdc; }
+      .main-section .top-line .balance-wrap .amount {
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 1.125em;
+        color: #c11a30; }
+        .main-section .top-line .balance-wrap .amount span {
+          font-size: 16px;
+          color: #c4c4c4; }
+  .main-section .main-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-section .main-block .left-nav {
+      width: 230px;
+      margin: 96px 0 0 0;
+      padding: 0 0 0 47px; }
+      .main-section .main-block .left-nav .item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 0 0 60px 0; }
+        .main-section .main-block .left-nav .item .user {
+          width: 34px;
+          height: 40px;
+          margin: 0 15px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .order {
+          width: 38px;
+          height: 46px;
+          margin: 0 11px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .call {
+          width: 36px;
+          height: 36px;
+          margin: 0 13px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .delivery {
+          width: 38px;
+          height: 38px;
+          margin: 0 11px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .link {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 40px;
+          padding: 0 15px;
+          font-family: "Ubuntu Bold", sans-serif;
+          font-size: 0.875em;
+          color: #2d2d2d;
+          text-decoration: none;
+          border-left: 4px solid #2d2d2d; }
+        .main-section .main-block .left-nav .item:hover svg {
+          fill: #c11a30; }
+        .main-section .main-block .left-nav .item:hover .link {
+          color: #fff;
+          border-left: 4px solid #c11a30;
+          background-image: url(../img/lk.menu.bg.png);
+          -webkit-background-size: cover;
+                  background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+        .main-section .main-block .left-nav .item.active svg {
+          fill: #c11a30; }
+        .main-section .main-block .left-nav .item.active .link {
+          color: #fff;
+          border-left: 4px solid #c11a30;
+          background-image: url(../img/lk.menu.bg.png);
+          -webkit-background-size: cover;
+                  background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+    .main-section .main-block .content {
+      width: 885px; }
+      .main-section .main-block .content > .title {
+        margin: 19px 0 0 0;
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 0.75em;
+        color: #c11a30; }
+
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+.guest-enter-block {
+  position: relative;
+  width: 572px;
+  height: 262px;
+  margin: 98px 0 0 65px;
+  background-image: url(../img/guest-btn-img.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .guest-enter-block .link {
+    position: absolute;
+    top: 54px;
+    left: -25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 469px;
+    height: 80px;
+    font-family: "Ubuntu Bold", sans-serif;
+    font-size: 2.25em;
+    color: #c11a30;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 7px; }
+    .guest-enter-block .link svg {
+      width: 35px;
+      height: 35px;
+      margin: 0 28px;
+      fill: #c11a30;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+    .guest-enter-block .link span {
+      display: block;
+      padding: 0 49px 0 35px;
+      border-right: 2px solid #dcdcdc; }
+  .guest-enter-block .arrows {
+    position: absolute;
+    top: -79px;
+    right: -206px; }
+  .guest-enter-block .car {
+    position: absolute;
+    top: 134px;
+    left: -163px; }
+
+/* styles */
+.main-section .content-side .main-block .content {
+  width: 800px; }
+
+.personal-information-block {
+  margin: 26px 0 0 0; }
+  .personal-information-block .section {
+    margin: 0 0 26px 0;
+    padding: 0 0 19px 0;
+    border-bottom: 2px solid #1f1f1f; }
+    .personal-information-block .section:last-child {
+      border: none;
+      padding: 0; }
+    .personal-information-block .section__top-line {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .personal-information-block .section__top-line .title {
+        position: relative;
+        padding: 0 0 4px 0;
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 1.5em;
+        color: #fff; }
+        .personal-information-block .section__top-line .title:after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 70px;
+          height: 4px;
+          background-color: #c11a30; }
+        .personal-information-block .section__top-line .title--balance:after {
+          width: 35px; }
+      .personal-information-block .section__top-line .link {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 25px;
+        border-radius: 5px; }
+        .personal-information-block .section__top-line .link.edit {
+          width: 176px;
+          margin: 0 0 0 28px;
+          font-family: "Ubuntu Bold", sans-serif;
+          font-size: 0.6875em;
+          color: #c4c4c4;
+          text-decoration: none;
+          background-color: #3b3b3b; }
+          .personal-information-block .section__top-line .link.edit svg {
+            width: 13px;
+            height: 13px;
+            margin: 0 4px 0 6px;
+            fill: #c4c4c4; }
+          .personal-information-block .section__top-line .link.edit span {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            height: 16px;
+            padding: 0 0 0 10px;
+            border-left: 1px solid #323131; }
+        .personal-information-block .section__top-line .link.change-pass {
+          width: 134px;
+          margin: 0 0 0 22px;
+          font-family: "Ubuntu Bold", sans-serif;
+          font-size: 0.6875em;
+          color: #3b3b3b;
+          text-decoration: none;
+          background-color: #c4c4c4; }
+          .personal-information-block .section__top-line .link.change-pass svg {
+            width: 12px;
+            height: 12px;
+            margin: 0 6px 0 7px;
+            fill: #3b3b3b; }
+          .personal-information-block .section__top-line .link.change-pass span {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            height: 16px;
+            padding: 0 0 0 10px;
+            border-left: 1px solid #b8b8b8; }
+    .personal-information-block .section .form {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding: 24px 0 0 0; }
+      .personal-information-block .section .form div {
+        width: 50%; }
+      .personal-information-block .section .form .input-wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        width: 100%;
+        margin: 0 0 12px 0;
+        font-family: "Ubuntu", sans-serif;
+        color: #d0d0d0; }
+        .personal-information-block .section .form .input-wrap:last-child {
+          margin: 0; }
+        .personal-information-block .section .form .input-wrap label {
+          display: block;
+          margin: 0 34px 0 0;
+          font-size: 1em; }
+        .personal-information-block .section .form .input-wrap input, .personal-information-block .section .form .input-wrap select {
+          outline: none;
+          width: 198px;
+          height: 38px;
+          padding: 0 14px;
+          font-size: 0.875em;
+          color: #d0d0d0;
+          border: none;
+          background-color: #181818; }
+        .personal-information-block .section .form .input-wrap select {
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none;
+          padding: 0 20px 0 14px;
+          background: url(../img/angle-arrow-down-small.png) no-repeat 95% 50%, #181818; }
+      .personal-information-block .section .form .submit-wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        width: 100%; }
+        .personal-information-block .section .form .submit-wrap .submit {
+          width: 200px;
+          height: 40px;
+          font-family: "Ubuntu Bold", sans-serif;
+          font-size: 0.875em;
+          color: #c4c4c4;
+          border: none;
+          border: 2px solid #c4c4c4;
+          border-radius: 4px;
+          background-color: transparent; }
+    .personal-information-block .section__content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .personal-information-block .section__content .private-balance {
+        margin: 22px 0 0 0; }
+        .personal-information-block .section__content .private-balance .balance-wrap {
+          margin: 0; }
+          .personal-information-block .section__content .private-balance .balance-wrap .title {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 1.125em;
+            color: #dcdcdc; }
+          .personal-information-block .section__content .private-balance .balance-wrap .amount {
+            margin: 1px 0 0 6px;
+            font-family: "Ubuntu Bold", sans-serif;
+            font-size: 1.875em;
+            color: #c11a30; }
+            .personal-information-block .section__content .private-balance .balance-wrap .amount span {
+              font-size: 24px;
+              color: #c4c4c4; }
+        .personal-information-block .section__content .private-balance .btns {
+          margin: 18px 0 0 0; }
+          .personal-information-block .section__content .private-balance .btns .link {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 300px;
+            height: 40px;
+            font-family: "Ubuntu Bold", sans-serif;
+            font-size: 1.125em;
+            color: #3b3b3b;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: #c4c4c4;
+            opacity: .2; }
+            .personal-information-block .section__content .private-balance .btns .link:hover {
+              opacity: 1; }
+            .personal-information-block .section__content .private-balance .btns .link svg {
+              width: 15px;
+              height: 15px;
+              margin: 0 0 0 13px;
+              fill: #3b3b3b; }
+              .personal-information-block .section__content .private-balance .btns .link svg.out {
+                -webkit-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                        transform: rotate(180deg); }
+            .personal-information-block .section__content .private-balance .btns .link span {
+              display: block;
+              padding: 0 26px;
+              border-right: 1px solid #b8b8b8; }
+            .personal-information-block .section__content .private-balance .btns .link.add-money {
+              margin: 10px 0 0 0; }
+              .personal-information-block .section__content .private-balance .btns .link.add-money img {
+                margin: 0 0 0 10px; }
+              .personal-information-block .section__content .private-balance .btns .link.add-money span {
+                padding: 0 36px 0 38px; }
+      .personal-information-block .section__content .rate-wrap {
+        margin: 21px 0 0 100px; }
+        .personal-information-block .section__content .rate-wrap .title {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1.125em;
+          color: #fff; }
+        .personal-information-block .section__content .rate-wrap .rate {
+          margin: 34px 0 0 0; }
+          .personal-information-block .section__content .rate-wrap .rate__top {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            font-family: "Ubuntu Bold", sans-serif;
+            font-size: 0.75em;
+            color: #c4c4c4; }
+            .personal-information-block .section__content .rate-wrap .rate__top .name {
+              width: 170px;
+              text-align: center; }
+            .personal-information-block .section__content .rate-wrap .rate__top .buy {
+              width: 100px;
+              text-align: center; }
+            .personal-information-block .section__content .rate-wrap .rate__top .sell {
+              width: 100px;
+              text-align: center; }
+          .personal-information-block .section__content .rate-wrap .rate__main {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin: 8px 0 0 0;
+            font-family: "Ubuntu Bold", sans-serif;
+            font-size: 0.75em;
+            color: #c4c4c4; }
+            .personal-information-block .section__content .rate-wrap .rate__main .name {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              width: 170px;
+              height: 40px;
+              font-family: "Ubuntu", sans-serif;
+              padding: 0 0 0 28px;
+              border-top: 1px solid #2d2d2d;
+              border-bottom: 1px solid #2d2d2d;
+              border-left: 1px solid #2d2d2d;
+              background-color: #1f1f1f; }
+            .personal-information-block .section__content .rate-wrap .rate__main .buy {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              width: 100px;
+              height: 40px;
+              border: 1px solid #7b7b7b;
+              background-color: #131313; }
+            .personal-information-block .section__content .rate-wrap .rate__main .sell {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              width: 100px;
+              height: 40px;
+              border: 1px solid #7b7b7b;
+              border-left: none;
+              background-color: #131313; }
+          .personal-information-block .section__content .rate-wrap .rate__bottom {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 0.75em;
+            color: #888888;
+            text-align: right; }
+            .personal-information-block .section__content .rate-wrap .rate__bottom span {
+              margin: 0 2px 0 0;
+              color: #c11a30; }
+    .personal-information-block .section.last-orders .section__content {
+      display: block;
+      margin: 24px 0 0 0; }
+      .personal-information-block .section.last-orders .section__content .table {
+        width: 775px;
+        background-color: #1f1f1f;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+        .personal-information-block .section.last-orders .section__content .table__head {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: end;
+          -webkit-justify-content: flex-end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          padding: 0 0 0 33px;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 0.75em;
+          color: #fff; }
+          .personal-information-block .section.last-orders .section__content .table__head div {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+          .personal-information-block .section.last-orders .section__content .table__head .number {
+            width: 71px;
+            height: 30px; }
+          .personal-information-block .section.last-orders .section__content .table__head .type {
+            width: 110px;
+            height: 30px; }
+          .personal-information-block .section.last-orders .section__content .table__head .amount {
+            width: 110px;
+            height: 30px; }
+          .personal-information-block .section.last-orders .section__content .table__head .sum {
+            width: 160px;
+            height: 30px; }
+          .personal-information-block .section.last-orders .section__content .table__head .status {
+            width: 120px;
+            height: 30px; }
+          .personal-information-block .section.last-orders .section__content .table__head .tth {
+            width: 171px;
+            height: 30px; }
+        .personal-information-block .section.last-orders .section__content .table__body {
+          background-color: #e8e8e8; }
+          .personal-information-block .section.last-orders .section__content .table__body .row {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            font-family: "Ubuntu Bold", sans-serif;
+            font-size: 0.875em;
+            color: #3b3b3b; }
+            .personal-information-block .section.last-orders .section__content .table__body .row div {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              height: 50px;
+              text-align: center;
+              border-top: 1px solid #bcbcbc;
+              border-bottom: 1px solid #bcbcbc;
+              border-left: 1px solid #bcbcbc;
+              border-right: 1px solid #bcbcbc; }
+            .personal-information-block .section.last-orders .section__content .table__body .row .input-wrap {
+              background-color: #1f1f1f;
+              border: none;
+              padding: 0 9px; }
+              .personal-information-block .section.last-orders .section__content .table__body .row .input-wrap input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden; }
+                .personal-information-block .section.last-orders .section__content .table__body .row .input-wrap input:checked + label {
+                  background-color: #c11a30; }
+                  .personal-information-block .section.last-orders .section__content .table__body .row .input-wrap input:checked + label svg {
+                    opacity: 1; }
+              .personal-information-block .section.last-orders .section__content .table__body .row .input-wrap label {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                width: 15px;
+                height: 15px;
+                border-radius: 4px;
+                background-color: #fff; }
+                .personal-information-block .section.last-orders .section__content .table__body .row .input-wrap label svg {
+                  width: 12px;
+                  height: 12px;
+                  fill: #fff;
+                  opacity: 0; }
+            .personal-information-block .section.last-orders .section__content .table__body .row .number {
+              position: relative;
+              width: 71px;
+              padding: 0 0 0 14px; }
+              .personal-information-block .section.last-orders .section__content .table__body .row .number .arrow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 14px;
+                height: 100%;
+                background-color: #c11a30;
+                border: none;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px; }
+                .personal-information-block .section.last-orders .section__content .table__body .row .number .arrow img {
+                  -webkit-transform: rotate(-90deg);
+                      -ms-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+            .personal-information-block .section.last-orders .section__content .table__body .row .type {
+              width: 110px; }
+            .personal-information-block .section.last-orders .section__content .table__body .row .amount {
+              width: 110px; }
+            .personal-information-block .section.last-orders .section__content .table__body .row .sum {
+              width: 160px; }
+              .personal-information-block .section.last-orders .section__content .table__body .row .sum span {
+                font-size: 0.75em;
+                color: #888888; }
+            .personal-information-block .section.last-orders .section__content .table__body .row .status {
+              width: 120px; }
+              .personal-information-block .section.last-orders .section__content .table__body .row .status.green {
+                color: #388536; }
+              .personal-information-block .section.last-orders .section__content .table__body .row .status.red {
+                color: #c11a30; }
+            .personal-information-block .section.last-orders .section__content .table__body .row .tth {
+              width: 171px; }
+
+/*# sourceMappingURL=lk.personal.css.map*/

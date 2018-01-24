@@ -1,0 +1,690 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu.woff2) format("woff2"), url(../fonts/Ubuntu.woff) format("woff"), url(../fonts/Ubuntu.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  src: url(../fonts/Ubuntu-Bold.woff2) format("woff2"), url(../fonts/Ubuntu-Bold.woff) format("woff"), url(../fonts/Ubuntu-Bold.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url(../fonts/OpenSans-Bold.woff2) format("woff2"), url(../fonts/OpenSans-Bold.woff) format("woff"), url(../fonts/OpenSans-Bold.eot) format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+.container {
+  width: 100%;
+  padding: 0 50px; }
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.more {
+  display: block;
+  width: 270px;
+  height: 51px;
+  line-height: 51px;
+  margin: 0 auto 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #c11a30; }
+
+/* components */
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+body {
+  background-color: #131313; }
+
+.main-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .main-section .bg-side {
+    width: 445px;
+    background-image: url(../img/reg-img.png);
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat; }
+    .main-section .bg-side .title {
+      margin: 38px -31px 0 0;
+      font-size: 1em;
+      text-align: right; }
+      .main-section .bg-side .title a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.1875em;
+        color: #c11a30;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -4px; }
+  .main-section .content-side {
+    width: calc(100% - 445px); }
+  .main-section .top-line {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 70%;
+    margin: 36px 0 0 0; }
+    .main-section .top-line .login-wrap .log-out {
+      display: block;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 0.875em;
+      color: #7b7b7b;
+      text-align: right; }
+    .main-section .top-line .login-wrap .name {
+      font-family: "Ubuntu Bold", sans-serif;
+      font-size: 1.125em;
+      color: #c11a30; }
+    .main-section .top-line .balance-wrap {
+      margin: 0 4px 0 29px; }
+      .main-section .top-line .balance-wrap .title {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 0.875em;
+        color: #dcdcdc; }
+      .main-section .top-line .balance-wrap .amount {
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 1.125em;
+        color: #c11a30; }
+        .main-section .top-line .balance-wrap .amount span {
+          font-size: 16px;
+          color: #c4c4c4; }
+  .main-section .main-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-section .main-block .left-nav {
+      width: 230px;
+      margin: 96px 0 0 0;
+      padding: 0 0 0 47px; }
+      .main-section .main-block .left-nav .item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 0 0 60px 0; }
+        .main-section .main-block .left-nav .item .user {
+          width: 34px;
+          height: 40px;
+          margin: 0 15px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .order {
+          width: 38px;
+          height: 46px;
+          margin: 0 11px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .call {
+          width: 36px;
+          height: 36px;
+          margin: 0 13px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .delivery {
+          width: 38px;
+          height: 38px;
+          margin: 0 11px 0 0;
+          fill: #2d2d2d; }
+        .main-section .main-block .left-nav .item .link {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 40px;
+          padding: 0 15px;
+          font-family: "Ubuntu Bold", sans-serif;
+          font-size: 0.875em;
+          color: #2d2d2d;
+          text-decoration: none;
+          border-left: 4px solid #2d2d2d; }
+        .main-section .main-block .left-nav .item:hover svg {
+          fill: #c11a30; }
+        .main-section .main-block .left-nav .item:hover .link {
+          color: #fff;
+          border-left: 4px solid #c11a30;
+          background-image: url(../img/lk.menu.bg.png);
+          -webkit-background-size: cover;
+                  background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+        .main-section .main-block .left-nav .item.active svg {
+          fill: #c11a30; }
+        .main-section .main-block .left-nav .item.active .link {
+          color: #fff;
+          border-left: 4px solid #c11a30;
+          background-image: url(../img/lk.menu.bg.png);
+          -webkit-background-size: cover;
+                  background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+    .main-section .main-block .content {
+      width: 885px; }
+      .main-section .main-block .content > .title {
+        margin: 19px 0 0 0;
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 0.75em;
+        color: #c11a30; }
+
+/*variables start*/
+/*variables end*/
+/*px to em function start*/
+/*px to em function end*/
+/*media start*/
+/*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
+.guest-enter-block {
+  position: relative;
+  width: 572px;
+  height: 262px;
+  margin: 98px 0 0 65px;
+  background-image: url(../img/guest-btn-img.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .guest-enter-block .link {
+    position: absolute;
+    top: 54px;
+    left: -25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 469px;
+    height: 80px;
+    font-family: "Ubuntu Bold", sans-serif;
+    font-size: 2.25em;
+    color: #c11a30;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 7px; }
+    .guest-enter-block .link svg {
+      width: 35px;
+      height: 35px;
+      margin: 0 28px;
+      fill: #c11a30;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+    .guest-enter-block .link span {
+      display: block;
+      padding: 0 49px 0 35px;
+      border-right: 2px solid #dcdcdc; }
+  .guest-enter-block .arrows {
+    position: absolute;
+    top: -79px;
+    right: -206px; }
+  .guest-enter-block .car {
+    position: absolute;
+    top: 134px;
+    left: -163px; }
+
+/* styles */
+.main-section {
+  overflow: hidden; }
+  .main-section .content-side .main-block .content {
+    width: 800px; }
+
+.waiting-delivery-wrap {
+  margin: 14px 0 0 0; }
+  .waiting-delivery-wrap__title {
+    position: relative;
+    padding: 0 0 4px 0;
+    font-family: "Ubuntu Bold", sans-serif;
+    font-size: 1.5em;
+    color: #fff; }
+    .waiting-delivery-wrap__title:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 70px;
+      height: 4px;
+      background-color: #c11a30; }
+  .waiting-delivery-wrap__subtitle {
+    margin: 35px 0 0 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.25em;
+    color: #fff; }
+  .waiting-delivery-wrap .tovar-list-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 558px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 5px 0 0; }
+    .waiting-delivery-wrap .tovar-list-wrap::-webkit-scrollbar {
+      width: 10px; }
+    .waiting-delivery-wrap .tovar-list-wrap::-webkit-scrollbar-track {
+      background-color: #202020;
+      border: 4px solid transparent;
+      -webkit-background-clip: content-box;
+              background-clip: content-box; }
+    .waiting-delivery-wrap .tovar-list-wrap::-webkit-scrollbar-thumb {
+      background-color: #202020;
+      border-radius: 10px; }
+    .waiting-delivery-wrap .tovar-list-wrap .tovar {
+      width: 370px;
+      min-height: 156px;
+      margin: 0 0 30px 0;
+      border: 1px solid #3b3b3b;
+      background-color: #fff; }
+      .waiting-delivery-wrap .tovar-list-wrap .tovar .main {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+        .waiting-delivery-wrap .tovar-list-wrap .tovar .main .img-wrap {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-flex-shrink: 0;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+          width: 100px; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .main .img-wrap img {
+            width: 100%;
+            height: 100%; }
+        .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap {
+          padding: 0 14px; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .name {
+            margin: 5px 0 0 0;
+            font-family: "Ubuntu Bold", sans-serif;
+            font-size: 0.75em;
+            color: #3b3b3b; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .table {
+            margin: 10px 0 0 0; }
+            .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .table__head {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              border: 1px solid #c4c4c4; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .table__head .cell {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                font-family: "Ubuntu Bold", sans-serif;
+                font-size: 0.625em;
+                color: #3b3b3b;
+                text-align: center;
+                width: calc(100% / 3);
+                height: 15px; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .table__head .order_date {
+                border-left: 1px solid #c4c4c4;
+                border-right: 1px solid #c4c4c4; }
+            .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .table__body {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .table__body .cell {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                font-family: "Ubuntu Bold", sans-serif;
+                font-size: 0.75em;
+                color: #c11a30;
+                text-align: center;
+                width: calc(100% / 3);
+                height: 15px; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .table__body .order_date {
+                border-left: 1px solid #c4c4c4;
+                border-right: 1px solid #c4c4c4; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .bottom {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin: 10px 0 0 0; }
+            .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .bottom .tovar-link {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              width: 130px;
+              height: 25px;
+              font-family: "Ubuntu Bold", sans-serif;
+              font-size: 0.75em;
+              color: #1f1f1f;
+              text-decoration: none;
+              border: 1px solid #1f1f1f; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .bottom .tovar-link:hover {
+                color: #c11a30;
+                border: 1px solid #c11a30; }
+            .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .bottom .comment-btn {
+              cursor: pointer;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              margin: 0 0 0 16px;
+              font-family: "Ubuntu Bold", sans-serif;
+              font-size: 0.625em;
+              color: #555555; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .main .info-wrap .bottom .comment-btn svg {
+                width: 9px;
+                height: 9px;
+                margin: 0 0 0 5px;
+                fill: #555555; }
+      .waiting-delivery-wrap .tovar-list-wrap .tovar .addition {
+        display: none; }
+      .waiting-delivery-wrap .tovar-list-wrap .tovar .comments-block {
+        margin: 20px 0 0 0; }
+        .waiting-delivery-wrap .tovar-list-wrap .tovar .comments-block .comment {
+          position: relative;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          padding: 10px 0 5px 0;
+          font-size: 0.75em;
+          color: #555555; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .comments-block .comment:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 15%;
+            width: 70%;
+            height: 1px;
+            background-color: #c4c4c4; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .comments-block .comment .date {
+            -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                    flex-shrink: 0;
+            padding: 0 15px;
+            font-family: "Ubuntu Bold", sans-serif; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .comments-block .comment .msg {
+            padding: 0 5px 0 0;
+            font-family: "Ubuntu", sans-serif; }
+      .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form {
+        padding: 0 0 10px 0; }
+        .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form > .title {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1.25em;
+          color: #fff; }
+        .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          margin: 10px 0 0 0; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .input-field-wrap {
+            margin: 0 0 0 15px; }
+            .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .input-field-wrap textarea {
+              outline: none;
+              width: 209px;
+              height: 62px;
+              padding: 5px;
+              font-family: "Ubuntu", sans-serif;
+              font-size: 0.75em;
+              color: #3b3b3b;
+              border: 1px solid #c4c4c4; }
+          .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls {
+            width: 120px;
+            margin: 0 0 0 15px; }
+            .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls #submit {
+              cursor: pointer;
+              outline: none;
+              width: 90px;
+              height: 20px;
+              font-family: "Ubuntu Bold", sans-serif;
+              font-size: 0.625em;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              background-color: #c11a30; }
+            .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .input-field-file {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .input-field-file #file {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .input-field-file label {
+                cursor: pointer;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #c4c4c4;
+                border-radius: 2px; }
+                .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .input-field-file label .attachment {
+                  width: 15px;
+                  height: 15px;
+                  fill: #c4c4c4; }
+                .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .input-field-file label span {
+                  display: block;
+                  padding: 0 0 0 20px;
+                  font-family: "Ubuntu", sans-serif;
+                  font-size: 0.75em;
+                  color: #c4c4c4;
+                  border-left: 1px solid #484848; }
+            .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .upload-files-preview {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              margin: 10px 0 0 0;
+              overflow-x: auto;
+              overflow-y: hidden; }
+              .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .upload-files-preview .img-wrap {
+                -webkit-flex-shrink: 0;
+                    -ms-flex-negative: 0;
+                        flex-shrink: 0;
+                width: 20px;
+                margin: 0 0 0 5px;
+                font-family: "Ubuntu", sans-serif;
+                font-size: 0.625em;
+                color: #c4c4c4; }
+                .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .upload-files-preview .img-wrap:nth-child(1) {
+                  margin: 0; }
+                .waiting-delivery-wrap .tovar-list-wrap .tovar .comment-form__content .controls .upload-files-preview .img-wrap img {
+                  width: 100%;
+                  opacity: .7; }
+
+/*# sourceMappingURL=lk.waiting.css.map*/

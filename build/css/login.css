@@ -22,12 +22,44 @@
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 /*variables start*/
 /*variables end*/
 /*px to em function start*/
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 * {
   margin: 0;
   padding: 0;
@@ -68,6 +100,22 @@ body {
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 .guest-enter-block {
   position: relative;
   width: 572px;
@@ -113,18 +161,14 @@ body {
       display: block;
       padding: 0 49px 0 35px;
       border-right: 2px solid #dcdcdc; }
-  .guest-enter-block .arrow {
+  .guest-enter-block .arrows {
     position: absolute;
-    top: -76px;
-    right: -235px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    top: -79px;
+    right: -206px; }
+  .guest-enter-block .car {
+    position: absolute;
+    top: 134px;
+    left: -163px; }
 
 /*login styles*/
 body {
@@ -163,7 +207,7 @@ body {
       color: #d0d0d0;
       text-align: right; }
     .main-section .registration-block .reg-links {
-      display: none;
+      display: block;
       margin: 137px 0 0 0; }
       .main-section .registration-block .reg-links a {
         display: block;
@@ -296,7 +340,7 @@ body {
               .main-section .registration-block .forms-wrap .form .bottom p a.grey {
                 color: #c4c4c4; }
         .main-section .registration-block .forms-wrap .form#form-rzn {
-          display: block;
+          display: none;
           margin: 142px 0 0 0; }
         .main-section .registration-block .forms-wrap .form#form-opt {
           display: none;

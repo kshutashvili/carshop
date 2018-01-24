@@ -492,12 +492,44 @@ animation: hide 0.5s 0.2s linear both; } */
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 /*variables start*/
 /*variables end*/
 /*px to em function start*/
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 * {
   margin: 0;
   padding: 0;
@@ -611,12 +643,44 @@ body {
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 /*variables start*/
 /*variables end*/
 /*px to em function start*/
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 .top-line {
   display: -webkit-box;
   display: -webkit-flex;
@@ -685,6 +749,22 @@ body {
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 .middle-line {
   margin: 20px 0 0 0;
   display: -webkit-box;
@@ -852,6 +932,22 @@ body {
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 .navigation-line {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1140,6 +1236,22 @@ body {
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 .tovar-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1340,6 +1452,22 @@ body {
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 .choose-mark-search {
   position: relative;
   width: 370px;
@@ -1417,6 +1545,22 @@ body {
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 .breadcrumbs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1453,6 +1597,22 @@ body {
 /*px to em function end*/
 /*media start*/
 /*media end*/
+/*
+
+&::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #202020;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #202020;
+            border-radius: 10px;    
+        }
+
+*/
 .footer {
   padding: 80px 0 40px 0;
   background-color: #1f1f1f; }
