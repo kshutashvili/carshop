@@ -1,6 +1,5 @@
-webpackJsonp([3],{
-
-/***/ 0:
+webpackJsonp([4],[
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10260,8 +10259,7 @@ return jQuery;
 
 
 /***/ }),
-
-/***/ 1:
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10286,34 +10284,123 @@ exports.default = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-
-/***/ 14:
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(15);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    var $wrap = $("#mb-menu-block");
+    var $menu = $("#mb-menu");
+    var $btn = $("#mb-menu-btn");
+
+    $btn.off("click");
+    $btn.on("click", function (e) {
+        e.stopPropagation();
+        $wrap.show();
+        $menu.slideDown();
+    });
+    $wrap.off("click");
+    $wrap.on("click", function (e) {
+        e.stopPropagation();
+
+        if ($(e.target).attr("id") === "mb-menu-block") {
+            $menu.slideUp();
+            $wrap.slideUp();
+        }
+    });
+};
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    var $btn = $("#open-search-btn");
+    var $searchBar = $("#search-bar");
+    var $close = $("#clear-form");
+
+    $btn.off("click");
+    $btn.on("click", function () {
+
+        $searchBar.addClass("active");
+    });
+    $close.off("click");
+    $close.on("click", function () {
+
+        $searchBar.removeClass("active");
+    });
+};
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+__webpack_require__(18);
 
 var _catalogMenu = __webpack_require__(1);
 
 var _catalogMenu2 = _interopRequireDefault(_catalogMenu);
 
+var _mb = __webpack_require__(2);
+
+var _mb2 = _interopRequireDefault(_mb);
+
+var _search = __webpack_require__(3);
+
+var _search2 = _interopRequireDefault(_search);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 $(window).on("load", function () {
     (0, _catalogMenu2.default)();
+    (0, _mb2.default)();
+    (0, _search2.default)();
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-
-/***/ 15:
+/* 18 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
-
-},[14]);
+],[17]);
 //# sourceMappingURL=blog.js.map

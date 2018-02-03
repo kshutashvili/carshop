@@ -1,4 +1,4 @@
-webpackJsonp([6],{
+webpackJsonp([2],{
 
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
@@ -10287,37 +10287,6 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ 19:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-__webpack_require__(20);
-
-var _catalogMenu = __webpack_require__(1);
-
-var _catalogMenu2 = _interopRequireDefault(_catalogMenu);
-
-var _mb = __webpack_require__(2);
-
-var _mb2 = _interopRequireDefault(_mb);
-
-var _search = __webpack_require__(3);
-
-var _search2 = _interopRequireDefault(_search);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-$(window).on("load", function () {
-    (0, _catalogMenu2.default)();
-    (0, _mb2.default)();
-    (0, _search2.default)();
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10356,10 +10325,35 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ 20:
-/***/ (function(module, exports) {
+/***/ 29:
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+__webpack_require__(30);
+
+var _catalogMenu = __webpack_require__(1);
+
+var _catalogMenu2 = _interopRequireDefault(_catalogMenu);
+
+var _mb = __webpack_require__(2);
+
+var _mb2 = _interopRequireDefault(_mb);
+
+var _search = __webpack_require__(3);
+
+var _search2 = _interopRequireDefault(_search);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+$(window).on("load", function () {
+
+    (0, _catalogMenu2.default)();
+    (0, _mb2.default)();
+    (0, _search2.default)();
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
@@ -10394,7 +10388,14 @@ exports.default = function () {
 ;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
+/***/ }),
+
+/***/ 30:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
 /***/ })
 
-},[19]);
-//# sourceMappingURL=article.js.map
+},[29]);
+//# sourceMappingURL=contacts.js.map

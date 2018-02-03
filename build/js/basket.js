@@ -1,4 +1,4 @@
-webpackJsonp([4],{
+webpackJsonp([5],{
 
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
@@ -10287,33 +10287,191 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ 23:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(24);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    var $wrap = $("#mb-menu-block");
+    var $menu = $("#mb-menu");
+    var $btn = $("#mb-menu-btn");
+
+    $btn.off("click");
+    $btn.on("click", function (e) {
+        e.stopPropagation();
+        $wrap.show();
+        $menu.slideDown();
+    });
+    $wrap.off("click");
+    $wrap.on("click", function (e) {
+        e.stopPropagation();
+
+        if ($(e.target).attr("id") === "mb-menu-block") {
+            $menu.slideUp();
+            $wrap.slideUp();
+        }
+    });
+};
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 25:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+__webpack_require__(26);
 
 var _catalogMenu = __webpack_require__(1);
 
 var _catalogMenu2 = _interopRequireDefault(_catalogMenu);
 
+var _mb = __webpack_require__(2);
+
+var _mb2 = _interopRequireDefault(_mb);
+
+var _search = __webpack_require__(3);
+
+var _search2 = _interopRequireDefault(_search);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var basketMobileSteps = function basketMobileSteps() {
+
+    var controls = {
+        back: $("#step-back"),
+        next: $("#step-next"),
+        submit: $("#basket-submit"),
+        settings: $("#delivery-settings"),
+        personal_info: $("#personal-info"),
+        shopping_basket: $("#shopping-basket"),
+        banner: $("#banner")
+    };
+
+    var $width = $(window).width();
+
+    var mobile = function mobile() {
+
+        controls.submit.addClass("hide");
+        controls.next.removeClass("hide");
+        controls.settings.addClass("hide");
+
+        //steps navigation
+
+        controls.next.off("click");
+        controls.next.on("click", function (e) {
+            e.preventDefault();
+
+            controls.next.addClass("hide");
+            controls.personal_info.addClass("hide");
+            controls.shopping_basket.addClass("hide");
+            controls.banner.addClass("hide");
+
+            controls.settings.removeClass("hide");
+            controls.submit.removeClass("hide");
+        });
+
+        controls.back.off("click");
+        controls.back.on("click", function (e) {
+            e.preventDefault();
+
+            controls.settings.addClass("hide");
+            controls.submit.addClass("hide");
+
+            controls.next.removeClass("hide");
+            controls.personal_info.removeClass("hide");
+            controls.shopping_basket.removeClass("hide");
+            controls.banner.removeClass("hide");
+        });
+    };
+    var defaultView = function defaultView() {
+
+        controls.settings.removeClass("hide");
+        controls.personal_info.removeClass("hide");
+        controls.shopping_basket.removeClass("hide");
+        controls.banner.removeClass("hide");
+        controls.submit.removeClass("hide");
+        controls.next.addClass("hide");
+
+        controls.next.off("click");
+        controls.back.off("click");
+    };
+
+    if ($width <= 768) {
+        mobile();
+    }
+
+    $(window).resize(function () {
+        var $width = $(this).width();
+
+        if ($width <= 768) {
+            mobile();
+        } else {
+            defaultView();
+        }
+    });
+};
 
 $(window).on("load", function () {
     (0, _catalogMenu2.default)();
+    (0, _mb2.default)();
+    (0, _search2.default)();
+    basketMobileSteps();
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
-/***/ 24:
+/***/ 26:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    var $btn = $("#open-search-btn");
+    var $searchBar = $("#search-bar");
+    var $close = $("#clear-form");
+
+    $btn.off("click");
+    $btn.on("click", function () {
+
+        $searchBar.addClass("active");
+    });
+    $close.off("click");
+    $close.on("click", function () {
+
+        $searchBar.removeClass("active");
+    });
+};
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
 /***/ })
 
-},[23]);
+},[25]);
 //# sourceMappingURL=basket.js.map

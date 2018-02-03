@@ -1,6 +1,5 @@
-webpackJsonp([2],{
-
-/***/ 0:
+webpackJsonp([3],[
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10260,8 +10259,7 @@ return jQuery;
 
 
 /***/ }),
-
-/***/ 1:
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10286,55 +10284,145 @@ exports.default = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-
-/***/ 12:
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(13);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    var $wrap = $("#mb-menu-block");
+    var $menu = $("#mb-menu");
+    var $btn = $("#mb-menu-btn");
+
+    $btn.off("click");
+    $btn.on("click", function (e) {
+        e.stopPropagation();
+        $wrap.show();
+        $menu.slideDown();
+    });
+    $wrap.off("click");
+    $wrap.on("click", function (e) {
+        e.stopPropagation();
+
+        if ($(e.target).attr("id") === "mb-menu-block") {
+            $menu.slideUp();
+            $wrap.slideUp();
+        }
+    });
+};
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    var $btn = $("#open-search-btn");
+    var $searchBar = $("#search-bar");
+    var $close = $("#clear-form");
+
+    $btn.off("click");
+    $btn.on("click", function () {
+
+        $searchBar.addClass("active");
+    });
+    $close.off("click");
+    $close.on("click", function () {
+
+        $searchBar.removeClass("active");
+    });
+};
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+__webpack_require__(16);
 
 var _catalogMenu = __webpack_require__(1);
 
 var _catalogMenu2 = _interopRequireDefault(_catalogMenu);
+
+var _mb = __webpack_require__(2);
+
+var _mb2 = _interopRequireDefault(_mb);
+
+var _search = __webpack_require__(3);
+
+var _search2 = _interopRequireDefault(_search);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var switchProductVIew = function switchProductVIew() {
     var $blockBtn = $("#block-btn");
     var $listBtn = $("#list-btn");
-    var $tovarList = $("#tovar-list");
+    var $blocks = $("#tovar-list-block");
+    var $list = $("#tovar-list-view");
 
     $listBtn.off("click");
     $listBtn.on("click", function () {
-        $blockBtn.removeClass("active");
         $(this).addClass("active");
-        $tovarList.addClass("list-view");
+        $blockBtn.removeClass("active");
+        $blocks.removeClass("active");
+        $list.addClass("active");
     });
 
     $blockBtn.off("click");
     $blockBtn.on("click", function () {
-        $listBtn.removeClass("active");
-        $tovarList.removeClass("list-view");
         $(this).addClass("active");
+        $listBtn.removeClass("active");
+        $list.removeClass("active");
+        $blocks.addClass("active");
     });
 };
 
 $(window).on("load", function () {
     (0, _catalogMenu2.default)();
     switchProductVIew();
+    (0, _mb2.default)();
+    (0, _search2.default)();
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-
-/***/ 13:
+/* 16 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
-
-},[12]);
+],[15]);
 //# sourceMappingURL=catalog.js.map

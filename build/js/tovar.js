@@ -10284,118 +10284,76 @@ exports.default = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(19);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-var _catalogMenu = __webpack_require__(1);
+exports.default = function () {
 
-var _catalogMenu2 = _interopRequireDefault(_catalogMenu);
+    var $wrap = $("#mb-menu-block");
+    var $menu = $("#mb-menu");
+    var $btn = $("#mb-menu-btn");
 
-__webpack_require__(20);
+    $btn.off("click");
+    $btn.on("click", function (e) {
+        e.stopPropagation();
+        $wrap.show();
+        $menu.slideDown();
+    });
+    $wrap.off("click");
+    $wrap.on("click", function (e) {
+        e.stopPropagation();
 
-__webpack_require__(21);
-
-__webpack_require__(22);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var timer = void 0;
-var timerFunc = function timerFunc() {
-    var date = $("#timer").attr("data-date");
-
-    timer = $('#timer').FlipClock({
-        clockFace: "DailyCounter",
-        countdown: true,
-        autoStart: false,
-        language: 'ru-ru',
-        callbacks: {
-            stop: function stop() {
-                console.log("counter stoped");
-            }
+        if ($(e.target).attr("id") === "mb-menu-block") {
+            $menu.slideUp();
+            $wrap.slideUp();
         }
     });
-
-    var start = new Date(date);
-    var now = Date.now();
-    var left = (start - now) / 1000;
-
-    timer.setTime(left);
-    timer.setCountdown(true);
-    timer.start();
 };
 
-$(document).ready(function () {
-
-    $("#main-slider").slick({
-        infinite: true,
-        dots: false,
-        arrows: false,
-        draggable: false,
-        asNavFor: "#main-slider-nav"
-    });
-
-    $("#main-slider-nav").slick({
-        //autoplay: true,
-        dots: false,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 4,
-        asNavFor: "#main-slider",
-        focusOnSelect: true
-    });
-
-    $("#cheaper-slider").slick({
-        arrows: false,
-        dots: true,
-        infinite: true,
-        appendDots: $("#dots-wrap")
-    });
-
-    $('#starts-select').barrating({
-        theme: 'css-stars'
-    });
-    $(".starts-select-review").each(function () {
-        $(this).barrating({
-            theme: 'css-stars'
-        });
-    });
-});
-
-$(window).on("load", function () {
-    (0, _catalogMenu2.default)();
-    timerFunc();
-});
+;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 19 */
-/***/ (function(module, exports) {
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    var $btn = $("#open-search-btn");
+    var $searchBar = $("#search-bar");
+    var $close = $("#clear-form");
+
+    $btn.off("click");
+    $btn.on("click", function () {
+
+        $searchBar.addClass("active");
+    });
+    $close.off("click");
+    $close.on("click", function () {
+
+        $searchBar.removeClass("active");
+    });
+};
+
+;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -13415,7 +13373,154 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
 /* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+__webpack_require__(22);
+
+var _catalogMenu = __webpack_require__(1);
+
+var _catalogMenu2 = _interopRequireDefault(_catalogMenu);
+
+var _mb = __webpack_require__(2);
+
+var _mb2 = _interopRequireDefault(_mb);
+
+var _search = __webpack_require__(3);
+
+var _search2 = _interopRequireDefault(_search);
+
+__webpack_require__(4);
+
+__webpack_require__(23);
+
+__webpack_require__(24);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var timer = void 0;
+
+var timerFunc = function timerFunc() {
+    var date = $("#timer").attr("data-date");
+
+    timer = $('#timer').FlipClock({
+        clockFace: "DailyCounter",
+        countdown: true,
+        autoStart: false,
+        language: 'ru-ru',
+        callbacks: {
+            stop: function stop() {
+                console.log("counter stoped");
+            }
+        }
+    });
+
+    var start = new Date(date);
+    var now = Date.now();
+    var left = (start - now) / 1000;
+
+    timer.setTime(left);
+    timer.setCountdown(true);
+    timer.start();
+};
+
+var commentsFormSwitcher = function commentsFormSwitcher() {
+    var $form = $("#comment-form");
+    var $btn = $form.find("#open-inputs-btn");
+    var $fields = $form.find("#input-fileds");
+
+    $btn.off("click");
+    $btn.on("click", function () {
+        $fields.toggleClass("active");
+    });
+};
+
+$(document).ready(function () {
+
+    $("#main-slider").slick({
+        infinite: true,
+        dots: false,
+        arrows: false,
+        draggable: false,
+        asNavFor: "#main-slider-nav"
+    });
+
+    $("#main-slider-nav").slick({
+        //autoplay: true,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 4,
+        asNavFor: "#main-slider",
+        focusOnSelect: true
+    });
+
+    $("#cheaper-slider").slick({
+        dots: true,
+        infinite: true,
+        appendDots: $("#dots-wrap"),
+        arrows: true,
+        appendArrows: $(".nav-arrows"),
+        prevArrow: $("#arrow-prev"),
+        nextArrow: $("#arrow-next")
+    });
+
+    if ($(window).width() <= 768) {
+
+        $("#popular-slider").slick({
+            arrows: false,
+            dots: true,
+            appendDots: $("#popular-dots-wrap")
+        });
+    }
+
+    $('.starts-select').barrating({
+        theme: 'css-stars'
+    });
+
+    $(".starts-select-review").each(function () {
+        $(this).barrating({
+            theme: 'css-stars'
+        });
+    });
+});
+
+$(window).on("load", function () {
+    (0, _catalogMenu2.default)();
+    timerFunc();
+    commentsFormSwitcher();
+    (0, _mb2.default)();
+    (0, _search2.default)();
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/*
@@ -16176,7 +16281,7 @@ var FlipClock;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -16770,5 +16875,5 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ })
-],[18]);
+],[21]);
 //# sourceMappingURL=tovar.js.map

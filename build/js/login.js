@@ -1,4 +1,4 @@
-webpackJsonp([6],{
+webpackJsonp([7],{
 
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
@@ -10261,13 +10261,13 @@ return jQuery;
 
 /***/ }),
 
-/***/ 25:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(26);
+__webpack_require__(28);
 
 var formSwitch = function formSwitch() {
     var regLinksWrap = $(".reg-links");
@@ -10275,8 +10275,6 @@ var formSwitch = function formSwitch() {
     var formRzn = $("#form-rzn");
     var regOpt = $(".reg-opt");
     var regRzn = $(".reg-rzn");
-    console.log(regOpt);
-    console.log(regRzn);
 
     regOpt.each(function () {
 
@@ -10307,12 +10305,12 @@ $(window).on("load", function () {
 
 /***/ }),
 
-/***/ 26:
+/***/ 28:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 
-},[25]);
+},[27]);
 //# sourceMappingURL=login.js.map
